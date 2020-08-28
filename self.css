@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+}
+/* Navbar Settings*/
+nav {
+  background-color: #ffffff;
+  height: 60px;
+  width: 100%;
+  color: black;
+}
+lable.logo {
+  color: black;
+  font-size: 28px;
+  line-height: 60px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+}
+nav ul {
+  list-style: none;
+  margin-right: 100px;
+  float: right;
+  padding-top: 21.5px;
+}
+nav ul li {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 21px 15px 20px 15px;
+  transition: 0.5s;
+}
+
+a.active, .nav-a:hover {
+  background: rgb(173,216,230, 0.5);
+  transition: 0.5s;
+  color: black;
+}
+
+/* DropMenu Settings */
+.dropDown {
+  display: inline-block;
+  position: relative;
+}
+.dropDown:hover .dropDown-content {
+  display: inline;
+}
+.dropDown-content {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 38px;
+  left: 0px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.175);
+}
+.dropDown-content li a {
+  color: black;
+  display: block;
+}
+
+.dropDown-content li {
+  line-height: 20px;
+}
+
+a:hover{
+  color: black !important;
+  text-decoration: none !important;
+}
+ 
+.logo{
+  position: absolute;
+  top: -0.5%;
+  left: 5%;
+}
+
+.header{
+  padding: 1%;
+}
+
+.row. .col{
+  padding: 3%;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.car1{
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 1%;
+}
+
+.carousel-item{
+  border-radius: 10%;
+}
+
+.carimg{
+  max-height: 525px;
+  opacity: 50%;
+}
+
+.cartext{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+.imgin{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 17%;
+  height: 40%;
+  color: white;
+  transform: translate(-50%, -50%);  
+}
+
+.i2{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 13%;
+  height: 26%;
+  color: white;
+  transform: translate(-50%, -50%);  
+}
+
+a:hover{
+  background-color: transparent;
+}
+
+
+.active-op{
+  padding-top: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center; 
+}
+
+.col{
+  border: 2px solid lightblue;
+  height: 300px;
+  width: 90px;
+  padding:2%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 2%;
+  margin-bottom: 2%; 
+  border-radius: 5%;
+}
+
+.sqround{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 35%;
+  height: 26.67%;
+  transform: translate(-50%, -50%);   
+  border-radius: 50%;
+  border: 1px solid black; 
+  opacity: 75%;
+}
+
+.postdts{
+  margin-top: 50%;
+}
+
+.ttl{
+  margin: 5px;
+  padding: 5px;
+}
+
+.jpdate, .plc{
+  text-align: left;
+  margin: 5px;
+  padding: 5px;  
+}
+
+.button1{
+  text-align: center;
+  margin: 5px;
+  padding: 5px; 
+  color: black;
+  background-color: lightblue;
+}
+
+a{
+  color: black !important;
+}
+
+.footer{
+  background-color: rgb(0,0,0);
+}
+
+.col-sm{
+  text-align: center;
+  color: white;
+  margin: 2%;
+  padding: 2%;
+}
+
+.linediv {
+    height: 4px;
+    width: 99.99%;
+    background: linear-gradient(-45deg, #219bcc, #01587a, #0251ed, #012366);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+ @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ttl{
+  background-color: lightgray;
+}
+
+/* Social Media Sticky*/
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+  padding: 2%;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-tw {
+  top: 215px;
+}
+
+.float-gp {
+  top: 270px;
+}
+
+.float-rs {
+  top: 325px;
+}
+
+.float-ig {
+  top: 380px;
+}
+
+.float-pn {
+  top: 435px;
+}
